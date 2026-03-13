@@ -1,0 +1,9 @@
+{
+  "loadBtn": "Load CAPTCHA",
+  "loading": "Loading...",
+  "verified": "✓ Verified",
+  "failed": "✗ Verification failed",
+  "requestError": "✗ Verification request failed",
+  "required": "Please complete verification first",
+  "consent": "Human verification is required to submit comments. Service provided by a third party."
+}

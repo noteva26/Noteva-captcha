@@ -1,0 +1,28 @@
+{
+  "id": "captcha",
+  "name": "人机验证",
+  "version": "1.2.0",
+  "description": "Comment captcha verification, supports Cloudflare Turnstile and hCaptcha",
+  "author": "Noteva Team",
+  "homepage": "https://github.com/noteva26/noteva-plugins",
+  "license": "MIT",
+  "requires": {
+    "noteva": ">=0.2.0"
+  },
+  "hooks": {
+    "frontend": [
+      "content_render"
+    ],
+    "backend": [
+      "comment_content_filter"
+    ]
+  },
+  "permissions": [
+    "network",
+    "storage"
+  ],
+  "shortcodes": [],
+  "settings": true,
+  "database": false,
+  "api": true
+}

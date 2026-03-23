@@ -1,0 +1,115 @@
+{
+  "sections": [
+    {
+      "id": "general",
+      "title": {
+        "zh-CN": "验证码设置",
+        "en": "Captcha Settings",
+        "zh-TW": "驗證碼設定"
+      },
+      "fields": [
+        {
+          "id": "provider",
+          "type": "select",
+          "label": {
+            "zh-CN": "验证码服务",
+            "en": "Captcha Provider",
+            "zh-TW": "驗證碼服務"
+          },
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": {
+                "zh-CN": "关闭",
+                "en": "Disabled",
+                "zh-TW": "關閉"
+              }
+            },
+            {
+              "value": "turnstile",
+              "label": "Cloudflare Turnstile"
+            },
+            {
+              "value": "hcaptcha",
+              "label": "hCaptcha"
+            }
+          ]
+        },
+        {
+          "id": "site_key",
+          "type": "text",
+          "label": "Site Key",
+          "default": "",
+          "placeholder": {
+            "zh-CN": "从验证码服务商获取",
+            "en": "Obtain from captcha provider",
+            "zh-TW": "從驗證碼服務商取得"
+          }
+        },
+        {
+          "id": "secret_key",
+          "type": "text",
+          "label": "Secret Key",
+          "default": "",
+          "placeholder": {
+            "zh-CN": "从验证码服务商获取",
+            "en": "Obtain from captcha provider",
+            "zh-TW": "從驗證碼服務商取得"
+          },
+          "secret": true
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": {
+        "zh-CN": "隐私保护",
+        "en": "Privacy",
+        "zh-TW": "隱私保護"
+      },
+      "fields": [
+        {
+          "id": "explicit_consent",
+          "type": "switch",
+          "label": {
+            "zh-CN": "显示隐私提示",
+            "en": "Show Privacy Notice",
+            "zh-TW": "顯示隱私提示"
+          },
+          "default": true
+        },
+        {
+          "id": "consent_text",
+          "type": "text",
+          "label": {
+            "zh-CN": "隐私提示文字",
+            "en": "Privacy Notice Text",
+            "zh-TW": "隱私提示文字"
+          },
+          "default": "提交评论需要进行人机验证，验证服务由第三方提供",
+          "placeholder": {
+            "zh-CN": "自定义隐私提示",
+            "en": "Custom privacy notice",
+            "zh-TW": "自訂隱私提示"
+          }
+        },
+        {
+          "id": "lazy_load",
+          "type": "switch",
+          "label": {
+            "zh-CN": "延迟加载",
+            "en": "Lazy Load",
+            "zh-TW": "延遲載入"
+          },
+          "description": {
+            "zh-CN": "用户交互后才加载验证码脚本",
+            "en": "Load captcha script only after user interaction",
+            "zh-TW": "使用者互動後才載入驗證碼腳本"
+          },
+          "default": true
+        }
+      ]
+    }
+  ]
+}

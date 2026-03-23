@@ -1,0 +1,9 @@
+{
+  "loadBtn": "加载验证码",
+  "loading": "加载中...",
+  "verified": "✓ 验证通过",
+  "failed": "✗ 验证失败",
+  "requestError": "✗ 验证请求失败",
+  "required": "请先完成人机验证",
+  "consent": "提交评论需要进行人机验证，验证服务由第三方提供"
+}
